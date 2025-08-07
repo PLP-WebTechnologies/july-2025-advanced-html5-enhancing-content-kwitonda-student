@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Songwriters in Nairobi</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+    }
+    audio {
+      display: block;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Famous Songwriters in Nairobi</h1>
+    <p>Explore popular songs, genres, and songwriting styles.</p>
+  </header>
+
+  <section>
+    <h2>Popular Songwriters and Their Songs</h2>
+    <ul>
+      <li>
+        <strong>Bien-Aimé Baraza (Sauti Sol)</strong>
+        <ul>
+          <li>Suzanna</li>
+          <li>Melanin</li>
+          <li>Mbwe Mbwe</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Eric Wainaina</strong>
+        <ul>
+          <li>Daima</li>
+          <li>Nchi ya Kitu Kidogo</li>
+          <li>Twende Twende</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Avril Nyambura</strong>
+        <ul>
+          <li>Chokoza</li>
+          <li>Kitu Kimoja</li>
+          <li>Nikimuona</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Genres and Songwriting Styles</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Songwriter</th>
+          <th>Music Genre</th>
+          <th>Songwriting Style</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bien-Aimé Baraza</td>
+          <td>Afro-pop / Afro-fusion</td>
+          <td>Emotional, poetic and modern love themes</td>
+        </tr>
+        <tr>
+          <td>Eric Wainaina</td>
+          <td>Afro-fusion / Benga</td>
+          <td>Social issues, politics and national pride</td>
+        </tr>
+        <tr>
+          <td>Avril Nyambura</td>
+          <td>Pop / R&B</td>
+          <td>Romantic, emotional and youth-focused lyrics</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Sample Audio</h2>
+    <p>Listen to a clip from Bien-Aimé's song "Suzanna":</p>
+    <audio controls>
+      <source src="suzanna-sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section>
+    <form>
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="feedbackID">Feedback ID:</label>
+        <input type="text" id="feedbackID" name="feedbackID" value="FDBK-20250807" readonly />
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required minlength="3" placeholder="e.g. Jane Doe" autocomplete="name"/>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="e.g. jane@example.com" autocomplete="email"/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Music Preferences</legend>
+        <label for="artist">Favorite Songwriter:</label>
+        <select id="artist" name="artist" required>
+          <option value="">--Select--</option>
+          <option value="Bien">Bien-Aimé Baraza</option>
+          <option value="Eric">Eric Wainaina</option>
+          <option value="Avril">Avril Nyambura</option>
+        </select>
+
+        <label for="rating">Rate Their Music:</label>
+        <select id="rating" name="rating" required>
+          <option value="">--Select--</option>
+          <option value="Good">Good</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Bad">Bad</option>
+        </select>
+
+        <label for="favsong">Your Favorite Song:</label>
+        <input type="text" id="favsong" name="favsong" required pattern=".{2,}" placeholder="e.g. Melanin" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Comments</legend>
+        <label for="comments">What do you love most about Nairobi music?</label>
+        <textarea id="comments" name="comments" rows="4" maxlength="500" placeholder="Share your thoughts..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Confirmation</legend>
+        <label>
+          <input type="checkbox" name="agree" required />
+          I confirm that the above information is accurate.
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kwitonda Alice. All rights reserved.</p>
+  </footer>
+</body>
+</html>
